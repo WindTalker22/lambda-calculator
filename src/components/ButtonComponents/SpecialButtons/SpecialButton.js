@@ -4,7 +4,14 @@ const SpecialButton = (props) => {
   console.log(props)
   return (
     <>
-      <button>{props.buttonName}</button>
+      <button 
+      className="button"
+      onClick={
+        () => props.clickHandler(props.buttonName)
+      }
+      >
+        {props.buttonName}
+      </button>
     </>
   );
 };
