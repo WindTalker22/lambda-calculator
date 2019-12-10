@@ -34,19 +34,19 @@ This project was put together using create-react-app (CRA). You will not need to
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [x] Submit a Pull-Request to merge Branch into master (student's Repository). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete by merging the branch back into master.
+- [x] Do your magic!
 
 # _Project - Lambda Calculator_
 
 **A job just came down from the Big Boss!**
 
-- [ ] A prospective client has tasked you with building a calculator app. They need you to build the app using the file structure and component wire frame provided.
-- [ ] Get all necessary files connected and either taking in or sending out data.
-- [ ] The design file should be followed as close as possible but doesn't have to be pixel perfect - budget your time wisely.
-- [ ] The client will provide their own proprietary calculator software so your app only needs basic functionality, enough for a demo.
+- [x] A prospective client has tasked you with building a calculator app. They need you to build the app using the file structure and component wire frame provided.
+- [x] Get all necessary files connected and either taking in or sending out data.
+- [x] The design file should be followed as close as possible but doesn't have to be pixel perfect - budget your time wisely.
+- [x] The client will provide their own proprietary calculator software so your app only needs basic functionality, enough for a demo.
 
 ## Directions
 
@@ -54,9 +54,9 @@ Using the design file, build out your User Interface. Before you start, look thr
 
 **STEP 1**
 
-- [ ] You have been given a Data.js file that contains some arrays.
-- [ ] Find a way to bring (import) the data into the necessary files, but do not change the data.
-- [ ] Data should be imported into the wrapper components (`Numbers`, `Operators`, and `Specials`)
+- [x] You have been given a Data.js file that contains some arrays.
+- [x] Find a way to bring (import) the data into the necessary files, but do not change the data.
+- [x] Data should be imported into the wrapper components (`Numbers`, `Operators`, and `Specials`)
 
 **Step 2**
 Add the data to state like this:
