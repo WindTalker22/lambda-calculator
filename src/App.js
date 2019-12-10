@@ -21,11 +21,56 @@ function App() {
 
   const [display, setDisplay] = useState(0)
 
-
+  
   let specialClickHandler = (buttonName) => {
     console.log(buttonName)
     setDisplay(buttonName)
   }
+  
+  let operatorIndex = 0
+
+  let buttonDisplayHell = (x, i) => {
+    console.log(x)
+    
+      if(i === 0 || i === 3 || i === 6 || i === 9){
+      return (
+        <>
+          <OperatorButton
+            buttonName={data.operators[operatorIndex++].char}
+            clickHandler={specialClickHandler}
+          />
+          <NumberButton 
+            buttonName={x}
+            clickHandler={specialClickHandler}
+          />
+        </>
+      )
+      }else if(i === 10){
+        return (
+          <>
+          <NumberButton 
+            buttonName={x}
+            clickHandler={specialClickHandler}
+          />
+          <OperatorButton
+            buttonName={data.operators[operatorIndex++].char}
+            clickHandler={specialClickHandler}
+          />
+          </>
+        )
+    }
+    else{
+      return (
+        <NumberButton 
+            buttonName={x}
+            clickHandler={specialClickHandler}
+          />
+      )
+    }
+  }
+
+
+
   return (
     <div className="container">
       <Logo />
@@ -45,17 +90,10 @@ function App() {
               )
             })
           }
-          <OperatorButton
-            buttonName={data.operators[0].char}
-            clickHandler={specialClickHandler}
-          />
           {
-            data.numbers.map(item => {
+            data.numbers.map((item, index) => {
               return (
-                <NumberButton
-                  buttonName={item}
-                  clickHandler={specialClickHandler}
-                />
+                buttonDisplayHell(item, index)
               )
             })
           }
