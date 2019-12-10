@@ -6,6 +6,7 @@ import React from "react";
 
 const Specials = () => {
   // STEP 2 - add the imported data to state
+  const [specialsState, setSpecialsState] = useState(data)
 
   return (
     <div>

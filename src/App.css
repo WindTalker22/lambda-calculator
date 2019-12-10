@@ -19,4 +19,15 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+}
+
+.button {
+    width: 25%;
+    background-color: steelblue;
+    font-size: 2rem;
+}
+
+.button:nth-last-of-type(3) {
+    width: 275px;
+    border-radius: 60px;
+}
